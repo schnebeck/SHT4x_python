@@ -37,7 +37,7 @@ else:
 ```
 ### Setting the Measurement Mode
 
-You can set the measurement mode using the mode property. Valid modes are "high", "medium", and "low". For example:
+You can set the measurement mode using the mode property. Valid modes are e.g. "high", "medium", and "low". For example:
 
 ```python
 
