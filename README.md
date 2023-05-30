@@ -63,6 +63,21 @@ You can obtain the serial number of the sensor using the serial_number property:
 serial_number = sensor.serial_number
 print(f"Serial Number: {serial_number}")
 ```
+
+### Printing a class instance
+
+When printing a class instance you get a summarized output of the serial number the current temperature and the current humididy
+
+```python
+
+sensor = SHT4x()
+sensor.update()
+print(sensor)
+```
+
+```output
+serial number: beefbeef | temperature: 20.0°C | humidity: 45.0% RH
+```
 Please refer to the inline code comments and the class definition for detailed information about each method and property.
 
 ## License
