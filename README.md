@@ -5,7 +5,9 @@ SHT4x.py is a Python class for interfacing with the Sensirion SHT4x temperature 
 
 Make sure you have Python 3.x installed. You can install the depending smbus2-library using pip:
 
-pip install smbus2
+```console
+foo@bar:~$pip install smbus2
+```
 
 ## Usage
 
