@@ -154,7 +154,7 @@ class SHT4x:
 
         temperature = None
         if self._temperature != None:
-            temperature = round(-45 + 175 * self._temperature / 65535, 1)
+            temperature = round(-45.0 + 175.0 * self._temperature / 65535.0, 1)
         return temperature
 
     @property
@@ -168,12 +168,9 @@ class SHT4x:
 
         humidity = None
         if self._humidity != None:
-            humidity = -6 + 125 * self._humidity / 65535
+            humidity = -6.0 + 125.0 * self._humidity / 65535.0
             humidity = round(humidity, 1)
-            if humidity > 100:
-                humidity = 100
-            if humidity < 0:
-                humidity = 0
+            humidity = max(min(humidity, 100.0), 0.0)
         return humidity
 
     @staticmethod
