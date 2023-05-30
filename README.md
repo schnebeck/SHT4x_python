@@ -66,7 +66,7 @@ print(f"Serial Number: {serial_number}")
 
 ### Printing a class instance
 
-When printing a class instance you get a summarized output of the serial number the current temperature and the current humididy
+When printing a class instance you get a summarized output of the serial number the current temperature and the current humididy:
 
 ```python
 
